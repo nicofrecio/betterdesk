@@ -1,0 +1,30 @@
+.report {
+  height: 200px;
+  background: linear-gradient(90deg, $drkblueBg, $lightblueBg);
+  position: relative;
+  margin-bottom: 0;
+  padding-top: 0;
+
+  &__content {
+
+  }
+
+  &__text {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 1px;
+    width: 45%;
+    line-height: 1.4;
+  }
+
+  &__image {
+    position: absolute;
+    top: 60px;
+    right: 150px;
+    width: 30vh;
+  }
+}

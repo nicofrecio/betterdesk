@@ -1,0 +1,12 @@
+.page-section {
+  padding: 4.5rem 0;
+
+  &--b-padding {
+    padding-bottom: 6.5rem;
+  }
+
+  &--signup-btm {
+    height: 300px;
+    background-color: $greenBg;
+  }
+}

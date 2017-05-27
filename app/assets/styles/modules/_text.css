@@ -1,0 +1,23 @@
+.text {
+  color: $greyColor;
+  letter-spacing: .5;
+  line-height: 1.4;
+
+
+  &--centered {
+    text-align: center;
+  }
+
+  &--white {
+    line-height: 1.8;
+    color: #fff;
+  }
+
+  &--link {
+    color: $blueLink;
+
+    &:hover {
+      color: $greenColor;
+    }
+  }
+}

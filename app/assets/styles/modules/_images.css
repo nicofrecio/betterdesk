@@ -1,0 +1,12 @@
+.images {
+
+  &__why-image {
+    margin-top: 30px;
+    width: 88%;
+  }
+
+  &__learn-more-image {
+    width: 85%;
+  }
+
+}

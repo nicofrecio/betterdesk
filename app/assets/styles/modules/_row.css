@@ -1,0 +1,26 @@
+.row {
+  @mixin clearfix;
+
+  &__2 {
+    float: left;
+    width: 20%;
+  }
+
+  &__3 {
+    float: left;
+    width: 25%;
+  }
+
+  &__4 {
+    float: left;
+    width: 33%;
+    text-align: center;
+  }
+
+  &__6 {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+
+}

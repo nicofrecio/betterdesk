@@ -1,0 +1,40 @@
+.signup {
+  position: relative;
+  top: 50%;
+  left: 50px;
+
+  &__centered {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-15%);
+    transform-origin: center;
+  }
+
+  &__form {
+    padding: 15px 20px;
+    width: 20%;
+    border-radius: 2px;
+    border: none;
+  }
+
+  &__btn {
+    color: #fff;
+    background-color: $greenColor;
+    padding: 15px 20px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $greenHover;
+    }
+
+    &--blue {
+      background-color: $blueLink;
+
+      &:hover {
+        background-color: $lightblueBg;
+      }
+    }
+  }
+}

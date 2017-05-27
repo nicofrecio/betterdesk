@@ -1,0 +1,10 @@
+.icons {
+
+  &__medium {
+    width: 30%;
+  }
+
+  &__small {
+    width: 34%;
+  }
+}

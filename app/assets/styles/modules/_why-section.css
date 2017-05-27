@@ -1,0 +1,31 @@
+.why-section {
+  height: 800px;
+  background: linear-gradient(45deg, $greenBg, $blueBg);
+
+  &__box {
+    width: 90%;
+    height: 200px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 80px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &__copy {
+    text-align: center;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: .5px;
+
+    h3 {
+      font-size: 1.6rem;
+      font-weight: 200;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+}
