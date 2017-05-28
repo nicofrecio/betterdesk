@@ -1,6 +1,7 @@
 .why-section {
   height: 800px;
   background: linear-gradient(45deg, $greenBg, $blueBg);
+  position: relative;
 
   &__box {
     width: 90%;

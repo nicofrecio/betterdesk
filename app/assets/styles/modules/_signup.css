@@ -1,7 +1,17 @@
 .signup {
   position: relative;
-  top: 50%;
-  left: 50px;
+  top: 41%;
+  left: 20px;
+
+  @mixin atMedium {
+    top: 45%;
+    left: 30px;
+  }
+
+  @mixin atLarge {
+    top: 50%;
+    left: 50px;
+  }
 
   &__centered {
     top: 50%;
@@ -12,9 +22,17 @@
 
   &__form {
     padding: 15px 20px;
-    width: 20%;
+    width: 48%;
     border-radius: 2px;
     border: none;
+
+    @mixin atMedium {
+      width: 27%;
+    }
+
+    @mixin atLarge {
+      width: 20%;
+    }
   }
 
   &__btn {

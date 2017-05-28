@@ -360,6 +360,8 @@ template {
 /* -- variables - color --*/
 /* -- global css -- */
 * {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -367,10 +369,12 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 1rem;
   color: #333;
+
 }
 img {
   max-width: 100%;
   height: auto;
+
 }
 a {
   text-decoration: none;
@@ -380,29 +384,75 @@ li {
 }
 /* -- modules imports -- */
 .main-hero {
-  height: 700px;
+  height: 500px;
   background-color: #3E3E58;
   position: relative;
 }
+@media (min-width: 736px ) {
+.main-hero {
+    height: 500px
+}
+  }
+@media (min-width: 1024px ) {
+.main-hero {
+    height: 700px
+}
+  }
 .main-hero__image {
     position: absolute;
-    width: 80vh;
+    width: 50vh;
     bottom: 0;
     right: 0;
   }
+@media (min-width: 736px ) {
+.main-hero__image {
+      width: 45vh
+  }
+  }
+@media (min-width: 1024px ) {
+.main-hero__image {
+      width: 80vh
+  }
+  }
 .main-hero__title {
     position: absolute;
-    top: 25%;
-    left: 50px;
-    font-size: 3.3rem;
+    top: 18%;
+    left: 20px;
+    font-size: 2.2rem;
     color: #fff;
     font-weight: 300;
   }
+@media (min-width: 736px ) {
+.main-hero__title {
+      top: 18%;
+      left: 30px;
+      font-size: 2.4rem
+  }
+  }
+@media (min-width: 1024px ) {
+.main-hero__title {
+      top: 25%;
+      left: 50px;
+      font-size: 3.3rem
+  }
+  }
 .signup {
   position: relative;
-  top: 50%;
-  left: 50px;
+  top: 41%;
+  left: 20px;
 }
+@media (min-width: 736px ) {
+.signup {
+    top: 45%;
+    left: 30px
+}
+  }
+@media (min-width: 1024px ) {
+.signup {
+    top: 50%;
+    left: 50px
+}
+  }
 .signup__centered {
     top: 50%;
     left: 50%;
@@ -413,9 +463,19 @@ li {
   }
 .signup__form {
     padding: 15px 20px;
-    width: 20%;
+    width: 48%;
     border-radius: 2px;
     border: none;
+  }
+@media (min-width: 736px ) {
+.signup__form {
+      width: 27%
+  }
+  }
+@media (min-width: 1024px ) {
+.signup__form {
+      width: 20%
+  }
   }
 .signup__btn {
     color: #fff;
@@ -443,10 +503,25 @@ li {
 }
 .site-header__logo {
     position: absolute;
-    width: 50%;
+    width: 40%;
+  }
+@media (min-width: 736px ) {
+.site-header__logo {
+      width: 45%
+  }
+  }
+@media (min-width: 1024px ) {
+.site-header__logo {
+      width: 50%
+  }
   }
 .site-header__menu-content {
-
+    display: none;
+  }
+@media (min-width: 736px ) {
+.site-header__menu-content {
+      display: block
+  }
   }
 .primary-nav::after {
     content: "";
@@ -478,18 +553,41 @@ li {
       border-bottom: 3px solid #3dbDb6;
     }
 .wrapper {
+
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
 .wrapper__nav {
-    padding-left: 3.125rem;
-    padding-right: 3.125rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+@media (min-width: 736px ) {
+.wrapper__nav {
+      padding-left: 1.875rem;
+      padding-right: 1.875rem
+  }
+  }
+@media (min-width: 1024px ) {
+.wrapper__nav {
+      padding-left: 3.125rem;
+      padding-right: 3.125rem
+  }
   }
 .wrapper__centered {
+    overflow: hidden;
     width: 1140px;
     margin-left: auto;
     margin-right: auto;
   }
+.row {
+  background-color: green;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: inherit;
+
+}
 .row::after {
     content: "";
     clear: both;
@@ -507,14 +605,29 @@ li {
   }
 .row__4 {
     float: left;
-    width: 33%;
+    width: 33.33%;
     text-align: center;
+    overflow: hidden;
   }
 .row__6 {
     float: left;
     width: 50%;
     text-align: center;
   }
+/* Begin Equal Height Rules */
+@media (min-width: 736px ) {
+.row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }
+  }
+.row--equal-height-at-medium > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
 .headline {
   font-size: 2rem;
   text-align: center;
@@ -528,6 +641,7 @@ li {
   }
 .page-section {
   padding: 4.5rem 0;
+  background-color: yellow;
 }
 .page-section--b-padding {
     padding-bottom: 6.5rem;
@@ -563,6 +677,7 @@ li {
 .why-section {
   height: 800px;
   background: linear-gradient(45deg, #3DBDB6, #0F95C8);
+  position: relative;
 
 }
 .why-section__box {

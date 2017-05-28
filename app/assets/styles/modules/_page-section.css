@@ -1,5 +1,6 @@
 .page-section {
   padding: 4.5rem 0;
+  background-color: yellow;
 
   &--b-padding {
     padding-bottom: 6.5rem;

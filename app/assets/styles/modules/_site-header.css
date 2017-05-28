@@ -6,11 +6,23 @@
 
   &__logo {
     position: absolute;
-    width: 50%;
+    width: 40%;
+
+    @mixin atMedium {
+      width: 45%;
+    }
+
+    @mixin atLarge {
+      width: 50%;
+    }
   }
 
   &__menu-content {
+    display: none;
 
+    @mixin atMedium {
+      display: block;
+    }
   }
 
 }

@@ -1,5 +1,9 @@
 .row {
   @mixin clearfix;
+  background-color: green;
+  overflow: hidden;
+  display: flex;
+  width: inherit;
 
   &__2 {
     float: left;
@@ -13,14 +17,27 @@
 
   &__4 {
     float: left;
-    width: 33%;
+    width: 33.33%;
     text-align: center;
+    overflow: hidden;
   }
 
   &__6 {
     float: left;
     width: 50%;
     text-align: center;
+  }
+
+  /* Begin Equal Height Rules */
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
+    }
   }
 
 }
